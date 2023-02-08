@@ -1,1 +1,1 @@
-Display current directory contents.
+This is the command for the 6th task
