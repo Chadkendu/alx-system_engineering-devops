@@ -1,1 +1,1 @@
-This is the third question on the shell basics
+Display current directory contents, including hidden files (starting with .). Use the long format.
