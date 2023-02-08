@@ -1,1 +1,1 @@
-My third commit
+Display current directory contents.
