@@ -1,1 +1,1 @@
-This is the 6th task shell variables
+This is the 7th task
