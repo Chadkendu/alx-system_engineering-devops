@@ -1,1 +1,1 @@
-t=Task 0 shell variable alias
+Task 0 alias shell variable
