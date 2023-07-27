@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Prints "Best School" 10 times using while loop
+
+Best="Best School"
+p=1
+
+while [ $p -le 10 ]
+do
+	echo "$Best"
+	p=$((p+1))
+done
