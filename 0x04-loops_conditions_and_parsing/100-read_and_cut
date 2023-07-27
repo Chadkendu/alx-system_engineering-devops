@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script displays the username, id, and directory path of user
+
+while read -r line
+do
+
+	username=$(echo "$line" | cut -d: -f1)
+	user_id=$(echo "$line" | cut -d: -f3)
+	path=$(echo "$line" | cut -d: -f6)
+
+	echo "$username:$user_id:$path"
+done < /etc/passwd
