@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Print filename after the first dash for all files
+
+FILELIST=$(ls -1)
+
+for file in $FILELIST
+do
+	echo "${file#*-}"
+done
