@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# displays numbers from 1 to 100
+# Displays "FizzBuzz" when the number is a multiple of 3 and 5
+# Displays "Fizz" when the number is multiple of 3
+# Displays "Buzz" when the number is a multiple of 5
+# Otherwise, displays the number
+# p is my variable
+
+for p in {1..100}
+do
+	if (( p % 3 == 0 )) && (( p % 5 == 0 ))
+	then
+		echo "FizzBuzz"
+	elif (( p % 3 == 0 ))
+	then
+		echo "Fizz"
+	elif (( p % 5 == 0 ))
+	then
+		echo "Buzz"
+	else
+		echo $p
+	fi
+done
