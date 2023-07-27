@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Script prints "Best School" 10 times
 
 Best="Best School"
