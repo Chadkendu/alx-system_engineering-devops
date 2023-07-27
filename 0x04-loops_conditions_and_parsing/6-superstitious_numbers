@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# displays "4" and "bad luck from China" for the 4th loop
+# displays "9" and "bad luck from Japan" for the 9th loop
+# displays "17" and "bad luck from Italy" for the 17th loop
+
+p=1
+
+while [ $p -le 20 ]
+do
+	echo "$p"
+	case $i in
+		4)
+			echo "bad luck from China"
+			;;
+		9)
+			echo "bad luck from Japan"
+			;;
+		17)
+			echo "bad luck from Italy"
+			;;
+	esac
+	((p++))
+done	
