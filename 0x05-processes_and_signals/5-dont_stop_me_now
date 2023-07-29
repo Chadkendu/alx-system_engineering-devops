@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This scripts stops a process.
+
+# gets the PID of a process created from q script
+PID=$(pgrep -f 4-to_infinity_and_beyond)
+kill "$PID"
