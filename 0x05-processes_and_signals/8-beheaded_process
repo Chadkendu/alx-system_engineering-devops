@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script creates a process that kills another process
+
+PID=$(pgrep -f 7-highlander)
+kill -9 "$PID"
