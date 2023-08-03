@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# -l : show only the listening sockets
+# -n : show the numeric addresses instead of resolving hostnames
+# -t : show only the TCP sockets
+# -u : show only the UDP sockets
+# -p : show the process using the socket
+
+netstat -ltup
