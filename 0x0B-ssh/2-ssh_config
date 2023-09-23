@@ -2,14 +2,14 @@ Include /etc/ssh/ssh_config.d/*.conf
 
 Host *
 #   ForwardAgent no
-#   ForwardX11Trusted yes
 #   ForwardX11 no
+#   ForwardX11Trusted yes
 #   PasswordAuthentication no
 #   HostbasedAuthentication no
-#   GSSAPIKeyExchange no
-#   GSSAPITrustDNS no
 #   GSSAPIAuthentication no
 #   GSSAPIDelegateCredentials no
+#   GSSAPIKeyExchange no
+#   GSSAPITrustDNS no
 #   BatchMode no
 #   CheckHostIP yes
 #   AddressFamily any
