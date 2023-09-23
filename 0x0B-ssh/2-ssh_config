@@ -1,4 +1,4 @@
-Include /etc/ssh/ssh_config.d/*.conf
+include /etc/ssh/ssh_config.d/*.conf
 
 Host *
 #   ForwardAgent no
