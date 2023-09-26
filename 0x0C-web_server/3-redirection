@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Script that automates ths installation of nginx
+
+# install nginx
+apt-get -y update
+apt-get -y install nginx
+
+# nginx listen on port 80
+ufw allow 'Nginx HTTP'
+
+# nginx default landing page
+echo "Hello world!" > /var/www/html/index.nginx-debian.html
+
+sed -i "/server_name _;/a \\\n\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}" /etc/nginx/sites-available/default
+
+service nginx restart
+
