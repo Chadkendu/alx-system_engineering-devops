@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# Script that automates ths installation of nginx
+
+# install nginx
+apt-get -y update
+apt-get -y install nginx
+
+# nginx default landing page
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+
+echo "Ceci n'est pas une page" > /var/www/html/404.html
+
+printf %s "server {
+        listen 80;
+        listen [::]:80 default_server;
+        root   /var/www/html;
+        index  index.html index.htm;
+
+        location /redirect_me {
+                return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+        }
+
+        error_page 404 /404.html;
+        location /404 {
+                root /var/www/html;
+                internal;
+                }
+}" > /etc/nginx/sites-available/default
+
+service nginx restart
+
