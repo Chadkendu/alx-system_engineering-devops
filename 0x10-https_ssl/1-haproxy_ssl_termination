@@ -48,6 +48,6 @@ frontend  kendu.tech-https-frontend
 
 backend kendu.tech-backend
         balance roundrobin
-        server 914-web-01 44.210.150.159:80 check
-        server 914-web-02 35.173.47.15:80 check
+        server 914-web-01 54.158.205.135:80 check
+        server 914-web-02 18.233.67.97:80 check
 # end parameter
